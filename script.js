@@ -13,12 +13,19 @@ if (document.body.id === "body2") {
         const text2 = document.querySelector(".fadeText2");
         const textPosition2 = text2.getBoundingClientRect().top;
 
+        const text3 = document.querySelector(".fadeText3");
+        const textPosition3 = text3.getBoundingClientRect().top;
+
         if (textPosition < screenPosition) {
             text.classList.add("visible");
         }
 
         if (textPosition2 < screenPosition) {
             text2.classList.add("visible");
+        }
+
+        if (textPosition3 < screenPosition) {
+            text3.classList.add("visible");
         }
     });
 }
@@ -328,6 +335,30 @@ if (document.body.id === "body25") {
         }
         if(window.scrollY > 850) {
             document.body.style.cursor = "zoom-in";
+        }
+        if(window.scrollY > 950) {
+            document.body.style.cursor = "zoom-out";
+        }
+        if(window.scrollY > 1050) {
+            document.body.style.cursor = "text";
+        }
+        if(window.scrollY > 1150) {
+            document.body.style.cursor = "move";
+        }
+        if(window.scrollY > 1250) {
+            document.body.style.cursor = "copy";
+        }
+        if(window.scrollY > 1350) {
+            document.body.style.cursor = "alias";
+        }
+        if(window.scrollY > 1450) {
+            document.body.style.cursor = "cell";
+        }
+        if(window.scrollY > 1550) {
+            document.body.style.cursor = "context-menu";
+        }
+        if(window.scrollY > 1650) {
+            document.body.style.cursor = "col-resize";
         }
     });
 }

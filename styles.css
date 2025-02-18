@@ -94,6 +94,18 @@ a {
     transform: translateY(500px);
 }
 
+.fadeText3 {
+    opacity: 0;
+    transform: translateY(1500px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin: 0 auto;
+}
+
+.fadeText3.visible {
+    opacity: 1;
+    transform: translateY(900px);
+}
+
 #textColour,
 .textColourGradual {
     color: #000000;
