@@ -25,10 +25,6 @@ p {
     color: #333;
 }
 
-#b9 {
-    font-size: 0.75rem;
-}
-
 header {
     top: 0;
     position: fixed;
@@ -41,6 +37,8 @@ header {
     background-color: #A7C1C5;
     z-index: 1000;
     border-bottom: 2px solid #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
@@ -68,6 +66,8 @@ a {
     border-radius: 5px;
     height: 100px;
     width: 100px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .fadeText {
@@ -197,6 +197,7 @@ a {
 .letter {
     font-size: 2rem;
     opacity: 0;
+    margin-top:50px;
 }
 
 .body22 {

@@ -25,8 +25,11 @@ if (document.body.id === "body2") {
 
 if (document.body.id === "body3") {
     window.addEventListener("scroll", () => {
-        const textColour = document.querySelector("#textColour");
-        textColour.style.color = "orchid";
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 900) {
+            window.alert("Go listen to diet pepsi!!");
+        } 
     });
 }
 
