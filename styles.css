@@ -9,13 +9,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #A7C1C5;
     height: 100vh;
     padding-top: 110px;
 }
 
-#scrollable {
-    min-height: 200vh;
+.scrollable {
+    min-height: 400vh;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+#b9 {
+    font-size: 0.75rem;
 }
 
 header {
@@ -28,6 +39,8 @@ header {
     height: 100px;
     margin: 0;
     background-color: #A7C1C5;
+    z-index: 1000;
+    border-bottom: 2px solid #000000;
 }
 
 
@@ -49,10 +62,100 @@ a {
 
 .button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #1C46AF;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     height: 100px;
     width: 100px;
+}
+
+.fadeText {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin: 0 auto;
+}
+
+.fadeText.visible {
+    opacity: 1;
+    transform: translateY(200px);
+}
+
+.fadeText2 {
+    opacity: 0;
+    transform: translateY(850px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin: 0 auto;
+}
+
+.fadeText2.visible {
+    opacity: 1;
+    transform: translateY(500px);
+}
+
+#textColour,
+.textColourGradual {
+    color: #000000;
+}
+
+.textShadow.visible {
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.textShadowGradual {
+    color: #000000;
+}
+
+.dietPepsiImage{
+    width: 400px;
+    height: 400px;
+    background-image: url("images/pepsi.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 350px;
+    z-index: 1;
+}
+
+.mentosImage {
+    width: 300px;
+    height: 300px;
+    background-image: url("images/mentos.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 0x;
+    z-index: 0;
+    margin-right: 10px;
+}
+
+.dietPepsiImage2{
+    width: 600px;
+    height: 600px;
+    background-image: url("images/pepsi.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.lyrics,
+.lyrics2,
+.lyrics3,
+.lyrics4 {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.lyrics2 {
+    margin-top: 150px;
+}
+
+.lyrics3 {
+    margin-top: 250px;
+}
+
+.lyrics4 {
+    margin-top: 350px;
 }
