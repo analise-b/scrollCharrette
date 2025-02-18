@@ -159,3 +159,51 @@ a {
 .lyrics4 {
     margin-top: 350px;
 }
+
+.dietPepsiImagePosition{
+    width: 400px;
+    height: 400px;
+    background-image: url("images/pepsi.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    z-index: 1;
+    position: absolute;
+}
+
+.dietPepsiImageReveal{
+    width: 400px;
+    height: 400px;
+    background-image: url("images/pepsi.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 550px;
+    z-index: 1;
+    position: absolute;
+}
+
+.progressBar {
+    position: fixed;
+    width: 0%;
+    height: 10px;
+    background-color: #1C46AF;
+    z-index: 1;
+}
+
+.textSize {
+    font-size: 1.5rem;
+}
+
+.letter {
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.body22 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A7C1C5;
+    height: 100vh;
+    padding-top: 110px;
+}
